@@ -28,7 +28,6 @@ gulp.task('lint', function() {
 		.src(SRC + '/**')
 		.pipe(react())
 		.pipe(jshint('.jshintrc'))
-		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'));
 });
 
